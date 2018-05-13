@@ -1,0 +1,3 @@
+include ':Application', ':hellocharts-library', ':nice-spinner'
+project(':hellocharts-library').projectDir = new File('Application/libs/hellocharts-library')
+project(':nice-spinner').projectDir = new File('Application/libs/nice-spinner')

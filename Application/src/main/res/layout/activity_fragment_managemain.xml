@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--蓝牙-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+
+                <com.example.lalal.CustomView.MagnetView
+                    android:layout_marginRight="0.5dp"
+                    android:id="@+id/btn_bluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="matrix"
+                    android:layout_weight="1"
+                    android:src="@drawable/lanya" />
+
+                <com.example.lalal.CustomView.MagnetView
+                    android:id="@+id/btn_dingwei"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"
+                    android:scaleType="matrix"
+                    android:src="@drawable/dingwei"/>
+
+
+            </LinearLayout>
+
+            <!--心率 通知-->
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+
+                <com.example.lalal.CustomView.MagnetView
+                    android:id="@+id/btn_xinlv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    android:scaleType="matrix"
+                    android:src="@drawable/xinlv" />
+
+                <com.example.lalal.CustomView.MagnetView
+                    android:id="@+id/btn_xiaoxitongzhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"
+                    android:scaleType="matrix"
+                    android:src="@drawable/tongzhi"/>
+
+            </LinearLayout>
+
+            <!--传输 其他-->
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+
+                <com.example.lalal.CustomView.MagnetView
+                    android:id="@+id/btn_chuanshu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    android:scaleType="matrix"
+                    android:src="@drawable/running" />
+
+                <com.example.lalal.CustomView.MagnetView
+                    android:id="@+id/btn_qita"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"
+                    android:scaleType="matrix"
+                    android:src="@drawable/clock"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

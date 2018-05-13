@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalal.Fragment.Dongtai.EditSSActivity"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/sstop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/quxiaoedit"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:text="取消"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_toRightOf="@id/quxiaoedit"
+            android:layout_toLeftOf="@id/querenedit"
+            android:layout_marginTop="5dp"
+            android:id="@+id/dongtaiedit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="动态"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/querenedit"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:text="确认"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:id="@+id/ssedit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_below="@id/sstop">
+
+        <EditText
+            android:id="@+id/edittext"
+            android:hint="说点什么吧......"
+            android:gravity="top"
+            android:background="@drawable/edit_bg"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+
+        <ImageView
+            android:id="@+id/editview"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/sport"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

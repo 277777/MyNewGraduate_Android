@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalal.MyNewGraduate.MainFragmentActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radioGroup">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_manager"
+            android:text="管理"
+            style="@style/style_RadioButton"
+            android:drawableTop="@drawable/rb_manager_selector"
+            android:checked="true" />
+
+
+        <RadioButton
+            android:id="@+id/rb_personal"
+            android:text="个人"
+            android:drawableTop="@drawable/rb_personal_selector"
+            style="@style/style_RadioButton"/>
+
+        <RadioButton
+            android:id="@+id/rb_dongtai"
+            android:text="动态"
+            android:drawableTop="@drawable/rb_dongtao_selector"
+            style="@style/style_RadioButton"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

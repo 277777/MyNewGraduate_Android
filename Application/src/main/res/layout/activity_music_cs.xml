@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalal.Manager.MusicCSActivity"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/relativelayout">
+
+    <!-- 标头 -->
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="请选择音乐文件，支持音乐格式!"/>
+        <Button
+            android:layout_gravity="center"
+            android:text="选择"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/filecata"/>
+    </LinearLayout>
+
+    <!-- textview -->
+    <LinearLayout
+        android:layout_above="@id/linearlayout3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/linearlayout1"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textviewfile"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/linearlayout4"
+        android:id="@+id/linearlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/jindutiao"/>
+
+    </LinearLayout>
+
+    <!-- button -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="将选择文件传输到设备"
+            android:id="@+id/upup"/>
+    </LinearLayout>
+
+</RelativeLayout>
